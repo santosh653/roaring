@@ -1,3 +1,7 @@
+arch:
+- amd64
+- ppc64le
+
 language: go
 sudo: false
 install:
@@ -11,21 +15,7 @@ go:
 - "1.13.x"
 - "1.14.x"
 - tip
-jobs:
- include:
-  - go: "1.13.x"
-    arch: amd64
-  - go: "1.13.x"
-    arch: ppc64le
-  - go: "1.14.x"
-    arch: amd64
-  - go: "1.14.x"
-    arch: ppc64le
-  - go: tip
-    arch: amd64
-  - go: tip
-    arch: ppc64le
-    
+   
   
   
 # whitelist
